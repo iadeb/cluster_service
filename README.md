@@ -11,7 +11,7 @@
 
 
 
-SELECT CAMPAIGN:
+# SELECT CAMPAIGN:
 
 '/select_camp/<string:camp_type>/<string:camp_name>/'
 '/select_camp/<string:camp_type>/<string:camp_name>/<string:objective>/
@@ -39,7 +39,7 @@ Response {cluster img}
 
 
 
-query DEVICE_TYPE BY CLUSTER:
+# query DEVICE_TYPE BY CLUSTER:
 
 Visualize:
 '/device_graph/<int:clusid>/'
@@ -64,7 +64,7 @@ http://localhost:5000/device_data/1/
 
 
 
-query DAY_OF_WEEK by DEVICE_TYPE
+# query DAY_OF_WEEK by DEVICE_TYPE
 
 Visualize:
 '/day_graph/<int:clusid>/<string:device_type>'
@@ -89,7 +89,7 @@ http://localhost:5000/day_data/1/android_smartphone
 
 
 
-query HOUR_OF_DAY by DEVICE_TYPE
+# query HOUR_OF_DAY by DEVICE_TYPE
 
 Visualize:
 '/hour_graph/<int:clusid>/<string:device_type>/<string:week_day>'
